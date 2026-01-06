@@ -1,3 +1,9 @@
-<section class="shadow-2xl border-2 border-gray-400 p-5 rounded-lg">
+<section class="shadow-2xl border-2 border-gray-400 rounded-lg">
     <div class="flex justify-start items-center"><img src="/images/social-link-logo.svg">Social Links</div>
+    <div class="flex gap-2">
+        @for (items of socialLinkItems; track items){
+            <div class="flex gap-2 border border-black w-full rounded-sm"><img class="w-5 h-5"src={{items.icons}}>{{items.name}}</div>
+        }
+
+    </div>
 </section>

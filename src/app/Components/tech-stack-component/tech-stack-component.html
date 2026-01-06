@@ -1,4 +1,4 @@
-<section class="shadow-2xl border-2 border-gray-400 p-5 rounded-lg">
+<section class="shadow-2xl border-2 border-gray-400  rounded-lg">
   <div class="flex">
     <img src="/images/codelogo.svg" />
     <p class="font-bold">Tech Stack</p>
@@ -6,19 +6,19 @@
   <div class="font-bold">Front-End</div>
   <div class="flex flex-wrap gap-4">
     @for(item of techStackItems; track item.name){
-        <div class="border border-black rounded-sm w-fit p-10">{{ item.name }}
+        <div class="border border-black rounded-sm w-fit ">{{ item.name }}
         </div>}
   </div>
   <div class="font-bold">Back-End</div>
   <div class="flex flex-wrap gap-4">
     @for(item of backendTechStackItems; track item.name){
-        <div class="border border-black rounded-sm w-fit p-10">{{ item.name }}
+        <div class="border border-black rounded-sm w-fit ">{{ item.name }}
         </div>}
   </div>
   <div class="font-bold">Others</div>
   <div class="flex flex-wrap gap-4">
     @for(item of otherTechStackItems; track item.name){
-        <div class="border border-black rounded-sm w-fit p-10">{{ item.name }}
+        <div class="border border-black rounded-sm w-fit ">{{ item.name }}
         </div>}
   </div>
 </section>
