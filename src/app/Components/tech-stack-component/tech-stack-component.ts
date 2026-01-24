@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {Theme} from '../../services/theme'
 
 
 interface FrontendTechStackItem {
@@ -21,6 +22,10 @@ interface OtherTechStackItem {
   styleUrl: './tech-stack-component.css',
 })
 export class TechStackComponent {
+
+  constructor(public theme: Theme){
+    
+  }
   techStackItems: FrontendTechStackItem[] = [
     { name: 'HTML' },
     { name: 'CSS' },
