@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Theme} from '../../services/theme'
 
 interface ProjectItems {
   name: string;
@@ -13,6 +14,9 @@ interface ProjectItems {
   styleUrl: './projects-component.css',
 })
 export class ProjectsComponent {
+  constructor(public theme: Theme){
+    
+  }
   projectItems: ProjectItems[] = [
     { name: 'PromdiFarm', description: 'A marketplace for Filipino farmers', url: 'promdifarm.com' },
     { name: 'San Juan Senior HS Website', description: 'A simple school website', url: 'https://sjshs.vercel.app/' },
