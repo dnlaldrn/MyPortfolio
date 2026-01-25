@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Theme} from '../../services/theme'
 
 @Component({
   selector: 'app-certifications-component',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './certifications-component.css',
 })
 export class CertificationsComponent {
+
+  constructor(public theme: Theme){
+    
+  }
 
 }
