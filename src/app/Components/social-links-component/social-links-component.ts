@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Theme} from '../../services/theme'
 
 interface SocialLinksItems{
   name:string,
@@ -12,6 +13,9 @@ interface SocialLinksItems{
   styleUrl: './social-links-component.css',
 })
 export class SocialLinksComponent {
+  constructor(public theme : Theme){
+
+  }
   socialLinkItems:SocialLinksItems[]=[
     {name: 'LinkedIn',
     icons: '/images/linkedin.png'
