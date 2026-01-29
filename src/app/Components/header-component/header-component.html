@@ -1,14 +1,57 @@
-<section class="flex justify-start items-center ">
-<div class="w-full max-w-6xl flex items-center gap-6 ">
-
+<section class="flex justify-start items-center">
+  <div class="w-full max-w-6xl flex items-center gap-6">
     <div class="flex justify-evenly items-center">
-      <img class= "h-m md:h-30 w-30 rounded-lg"src="images/profile.jpg" alt="Logo" />
+      <img
+        class="h-m md:h-30 w-30 rounded-lg"
+        [src]="isHover ? 'images/DR.png' : 'images/profile.jpg'"
+        alt="Logo"
+        (mouseenter)="isHover = true"
+        (mouseleave)="isHover = false"
+      />
     </div>
     <div class="gap-1 flex flex-col justify-between items-start">
-      <div class="flex justify-end items-end"><p class=" text-(--text-color) font-extrabold text-sm md:text-2xl ">Daniel Aldreen Manjares</p><img src="/images/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg"></div>
-      <div class="flex justify-center items-center"><img src="/images/location.svg"><p class="text-sm md:text-lg">Batangas, Philippines</p></div>
+      <div class="flex justify-between items-end">
+        <p class="text-(--text-color) font-extrabold text-sm md:text-2xl">
+          Daniel Aldreen Manjares
+        </p>
+        <img src="/images/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" />
+        <button (click)="theme.toggleTheme()">
+          {{ theme.isDark() ? '☀️ Light' : '🌙 Dark' }}
+        </button>
+      </div>
+      <div class="flex justify-center items-center">
+        <img
+          [src]="theme.isDark() ? 'images/Darkmode-Icons/location.svg' : 'images/location.svg'"
+        />
+        <p class="text-sm md:text-lg">Batangas, Philippines</p>
+      </div>
       <div class=""><p class="text-sm md:text-lg">Frontend Developer</p></div>
-      <button class="border border-gray-400 rounded-md px-3 py-1 flex justify-center items-center gap-2 hover:translate-y-1 duration-300 ease-in-out"><img class="w-5 h-5" src="/images/mail.png">Send Email</button>
+      <div class="flex justify-start items-center gap-2">
+        <a
+          href="/Resume/Manjares.pdf"
+          download=""
+          class="border border-gray-400 rounded-md px-3 py-1 flex justify-center items-center gap-2 hover:translate-y-1 duration-300 ease-in-out "
+        >
+          <img
+            class="w-5 h-5"
+            [src]="
+              theme.isDark() ? 'images/Darkmode-Icons/dlbutton.svg' : 'images/dlbuttonicon.svg'
+            "
+          />Dowload CV</a
+        >
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=danielaldreenm@gmail.com&su=Hello&body=Hi"
+          target="_blank"
+          class="border border-gray-400 rounded-md px-3 py-1 flex justify-center items-center gap-2 hover:translate-y-1 duration-300 ease-in-out"
+        >
+          <img
+            class="w-5 h-5"
+            [src]="theme.isDark() ? 'images/Darkmode-Icons/Mail.svg' : '/images/mail.svg'"
+            alt="Mail Icon"
+          />
+          Send Email
+        </a>
+      </div>
     </div>
   </div>
 </section>

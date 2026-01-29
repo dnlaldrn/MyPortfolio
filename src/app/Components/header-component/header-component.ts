@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Theme} from '../../services/theme'
 
 
 @Component({
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './header-component.css',
 })
 export class HeaderComponent {
+  constructor(public theme:Theme){
+
+  }
+  isHover = false;
 
 
 }
