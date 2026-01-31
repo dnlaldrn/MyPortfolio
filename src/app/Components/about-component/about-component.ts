@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Theme} from '../../services/theme'
 @Component({
   selector: 'app-about-component',
   imports: [],
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './about-component.css',
 })
 export class AboutComponent {
+ constructor(public theme:Theme){
 
+  }
 }
