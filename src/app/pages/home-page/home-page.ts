@@ -8,6 +8,7 @@ import { CertificationsComponent } from '../../Components/certifications-compone
 import { ProjectsComponent } from '../../Components/projects-component/projects-component';
 import { SocialLinksComponent } from '../../Components/social-links-component/social-links-component';
 import { OrganizationComponent } from '../../Components/organization-component/organization-component';
+import {GalleryComponent} from '../../Components/gallery-component/gallery-component'
 
 @Component({
   selector: 'app-home-page',
@@ -21,6 +22,7 @@ import { OrganizationComponent } from '../../Components/organization-component/o
         ProjectsComponent,
         SocialLinksComponent,
         OrganizationComponent,
+        GalleryComponent
   ],
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
