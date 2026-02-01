@@ -1,1 +1,21 @@
-<p>gallery-component works!</p>
+<section class="w-full overflow-hidden">
+  <p class="text-center mb-4 font-semibold">Watch My Journey</p>
+
+  <div id="carousel">
+    <div class="group">
+
+      @for (item of slides; track item) {
+        <a [href]="item.link" target="_blank">
+          <img [src]="item.img" />
+        </a>
+      }
+
+      @for (item of slides; track item) {
+        <a [href]="item.link" target="_blank">
+          <img [src]="item.img" />
+        </a>
+      }
+
+    </div>
+  </div>
+</section>
