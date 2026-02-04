@@ -5,13 +5,13 @@
     <div class="group">
 
       @for (item of slides; track item) {
-        <a [href]="item.link" target="_blank">
+        <a routerLink="/journey">
           <img [src]="item.img" />
         </a>
       }
 
       @for (item of slides; track item) {
-        <a [href]="item.link" target="_blank">
+        <a routerLink="/journey" >
           <img [src]="item.img" />
         </a>
       }

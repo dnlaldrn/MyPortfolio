@@ -1,5 +1,6 @@
 import {  Component, inject } from '@angular/core';
 import {GalleryService, slideElements} from '../../services/gallery/gallery';
+import { RouterLink } from '@angular/router';
 
 
 
@@ -7,7 +8,7 @@ import {GalleryService, slideElements} from '../../services/gallery/gallery';
 @Component({
   selector: 'app-gallery-component',
   standalone:true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './gallery-component.html',
   styleUrl: './gallery-component.css',
 })
