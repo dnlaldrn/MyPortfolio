@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+/* Light (default) */
+body {
+  background-color: #ffffff;
+  color: #111;
+  transition: background 0.2s, color 0.1s;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #121212;
+  color: #e5e5e5;
+}
+
+/* Example shared styles */
+body.dark .card {
+  background-color: #1e1e1e;
+}
+
+
+body.dark button {
+  background-color: #333;
+  color: white;
+}
