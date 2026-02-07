@@ -1,18 +1,23 @@
 <section class="w-full overflow-hidden">
-  <p class="text-center mb-4 font-semibold">Watch My Journey</p>
+  <div class="flex justify-between items-center">
+    <p class="text-center mb-2 font-semibold">Watch My Journey</p>
+  <a routerLink="/journey" class="flex justify-center items-center"><p class="text-sm">View All</p><img class="h-4 w-4" src="/images/arrowforward.svg" ></a>
+
+  </div>
+  
 
   <div id="carousel">
     <div class="group">
 
       @for (item of slides; track item) {
-        <a routerLink="/journey">
-          <img [src]="item.img" />
+        <a [href]="item.link">
+          <img class="gallery-img" [src]="item.img" />
         </a>
       }
 
       @for (item of slides; track item) {
-        <a routerLink="/journey" >
-          <img [src]="item.img" />
+        <a [href]="item.link" >
+          <img  class="gallery-img" [src]="item.img" />
         </a>
       }
 

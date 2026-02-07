@@ -11,8 +11,8 @@
   animation: scroll 15s linear infinite;
 }
 
-img {
-    border-radius: 5px;
+.gallery-img {
+  border-radius: 5px;
   flex: 0 0 auto;
   height: 12em;
   width: 10em;
