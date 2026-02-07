@@ -1,12 +1,12 @@
 <div class="grid grid-cols-1 gap-2 md:grid-cols-5">
-  <div class="md:col-start-2 md:col-span-3 component  " >
+  <div class="md:col-start-2 md:col-span-3 component">
     <app-header-component />
   </div>
 
-    <div class="md:col-start-2 md:row-start-2 md:row-end-4 component" [style.animation-delay.ms]="5">
+  <div class="md:col-start-2 md:row-start-2 md:row-end-4 component" [style.animation-delay.ms]="5">
     <app-experince-component />
   </div>
-  
+
   <div class="md:col-start-3 md:col-span-2 component" [style.animation-delay.ms]="10">
     <app-about-component />
   </div>
@@ -14,7 +14,6 @@
   <div class="md:col-start-3 md:col-span-2 component" [style.animation-delay.ms]="15">
     <app-projects-component />
   </div>
-
 
   <div class="md:col-start-2 md:col-span-2 md:row-span-2 component" [style.animation-delay.ms]="20">
     <app-tech-stack-component />
@@ -24,14 +23,22 @@
     <app-certifications-component />
   </div>
 
-  <div class="md:col-start-4 component" [style.animation-delay.ms]="40"> 
+  <div class="md:col-start-4 component" [style.animation-delay.ms]="40">
     <app-organization-component />
   </div>
 
   <div class="md:col-start-4 component" [style.animation-delay.ms]="50">
     <app-social-links-component />
   </div>
-   <div class="md:col-span-2 md:col-start-2 md:row-start-6">
+  <div class="md:col-span-2 md:col-start-2 md:row-start-6">
     <app-gallery-component></app-gallery-component>
   </div>
+</div>
+
+<div class="flex justify-center items-center">
+  <hr class="mt-10 w-[70%] items-center" />
+</div>
+
+<div class="flex justify-center items-center mt-2">
+  © 2026 Daniel Manjares. All rights reserved.
 </div>
