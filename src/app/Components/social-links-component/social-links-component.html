@@ -3,7 +3,7 @@
     <div class="flex gap-2">
         @for (items of socialLinkItems; track items){
             <div [class]="theme.isDark()? 'flex justify-center items-center gap-2 border border-white w-fit rounded-sm p-1 hover:translate-y-1 duration-300 ease-in-out mt-2'
-            :'flex justify-center items-center gap-2 border border-black w-fit rounded-sm p-1 hover:translate-y-1 duration-300 ease-in-out mt-2' "><img class="w-5 h-5"src={{items.icons}}>{{items.name}}</div>
+            :'flex justify-center items-center gap-2 border border-black w-fit rounded-sm p-1 hover:translate-y-1 duration-300 ease-in-out mt-2' "><img class="w-5 h-5"src={{items.icons}}></div>
         }
 
     </div>
