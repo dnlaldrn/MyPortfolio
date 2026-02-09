@@ -4,6 +4,7 @@ import {Theme} from '../../services/theme'
 interface ProjectItems {
   name: string;
   description: string;
+  status:string;
   url: string;
 }
 
@@ -18,7 +19,7 @@ export class ProjectsComponent {
     
   }
   projectItems: ProjectItems[] = [
-    { name: 'PromdiFarm', description: 'A marketplace for Filipino farmers', url: 'promdifarm.com' },
-    { name: 'San Juan Senior HS Website', description: 'A simple school website', url: 'https://sjshs.vercel.app/' },
+    { name: 'PromdiFarm', description: 'A marketplace for Filipino farmers',status:'On progress', url: 'promdifarm.com' },
+   
   ];
 }
