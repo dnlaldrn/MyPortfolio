@@ -1,36 +1,42 @@
-<div class="grid grid-cols-1 gap-2 md:grid-cols-5">
-  <div class="md:col-start-2 md:col-span-3 component">
+<div class="grid grid-cols-1 gap-2 lg:grid-cols-5">
+  <div class="component lg:col-start-2 lg:col-span-3">
     <app-header-component />
   </div>
 
-  <div class="md:col-start-2 md:row-start-2 md:row-end-4 component" [style.animation-delay.ms]="5">
+  <div
+    class="component lg:col-start-2 lg:row-start-2 lg:row-end-4"
+    [style.animation-delay.ms]="100"
+  >
     <app-experince-component />
   </div>
 
-  <div class="md:col-start-3 md:col-span-2 component" [style.animation-delay.ms]="10">
+  <div class="component lg:col-start-3 lg:col-span-2" [style.animation-delay.ms]="200">
     <app-about-component />
   </div>
 
-  <div class="md:col-start-3 md:col-span-2 component" [style.animation-delay.ms]="15">
+  <div class="lg:col-start-3 lg:col-span-2 component" [style.animation-delay.ms]="300">
     <app-projects-component />
   </div>
 
-  <div class="md:col-start-2 md:col-span-2 md:row-span-2 component" [style.animation-delay.ms]="20">
+  <div
+    class="lg:col-start-2 lg:col-span-2 lg:row-span-2 component"
+    [style.animation-delay.ms]="400"
+  >
     <app-tech-stack-component />
   </div>
 
-  <div class="md:col-start-4 component" [style.animation-delay.ms]="30">
+  <div class="lg:col-start-4 component" [style.animation-delay.ms]="500">
     <app-certifications-component />
   </div>
 
-  <div class="md:col-start-4 component" [style.animation-delay.ms]="40">
+  <div class="lg:col-start-4 component" [style.animation-delay.ms]="600">
     <app-organization-component />
   </div>
 
-  <div class="md:col-start-4 component" [style.animation-delay.ms]="50">
+  <div class="lg:col-start-4 component" [style.animation-delay.ms]="700">
     <app-social-links-component />
   </div>
-  <div class="md:col-span-2 md:col-start-2 md:row-start-6">
+  <div class="lg:col-span-2 lg:col-start-2 lg:row-start-6">
     <app-gallery-component></app-gallery-component>
   </div>
 </div>

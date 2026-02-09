@@ -12,3 +12,12 @@
     transform: translateY(0);
   }
 }
+
+p {
+  font-size: x-small;
+}
+@media (width >= 64rem /* 1024px */) {
+  p {
+    font-size: large;
+  }
+}
