@@ -1,14 +1,14 @@
 <section class="w-full overflow-hidden">
   <div class="flex justify-between items-center px-3">
     <p class="text-center mb-2 font-semibold">Watch My Journey</p>
-  <a routerLink="/journey" class="flex justify-center items-center"><p class="text-xs">View All</p><img class="h-4 w-4" src="/images/arrowforward.svg" ></a>
-
+    <a routerLink="/journey" class="flex justify-center items-center"
+      ><p class="text-xs">View All</p>
+      <img class="h-4 w-4" src="/images/arrowforward.svg"
+    /></a>
   </div>
-  
 
   <div id="carousel">
     <div class="group">
-
       @for (item of slides; track item) {
         <a [href]="item.link">
           <img class="gallery-img" [src]="item.img" />
@@ -16,11 +16,10 @@
       }
 
       @for (item of slides; track item) {
-        <a [href]="item.link" >
-          <img  class="gallery-img" [src]="item.img" />
+        <a [href]="item.link">
+          <img class="gallery-img" [src]="item.img" />
         </a>
       }
-
     </div>
   </div>
 </section>
