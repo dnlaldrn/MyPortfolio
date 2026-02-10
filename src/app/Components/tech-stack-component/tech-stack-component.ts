@@ -43,6 +43,7 @@ export class TechStackComponent {
     {name: 'Git' },
     {name: 'GitHub' },
     {name: 'Prettier' },
-    {name: 'Vercel' }
+    {name: 'Vercel' },
+    {name: 'Figma' }
   ]
 }
