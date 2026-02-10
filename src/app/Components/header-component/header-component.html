@@ -1,6 +1,5 @@
-<section class="flex justify-start items-center">
-  <div class="w-full max-w-6xl flex items-center gap-6">
-    <div class="flex justify-evenly items-center">
+<section class="w-full max-w-6xl flex items-start gap-6 mt-2">
+    <div class="w-30">
       <img
         class="h-m md:h-30 w-30 rounded-lg"
         [src]="isHover ? 'images/DR.png' : 'images/profile.jpg'"
@@ -9,49 +8,72 @@
         (mouseleave)="isHover = false"
       />
     </div>
-    <div class="gap-1 flex flex-col justify-between items-start">
-      <div class="flex justify-between items-end">
-        <p class="text-(--text-color) font-extrabold text-sm md:text-2xl">
-          Daniel Aldreen Manjares
-        </p>
-        <img src="/images/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" />
-        <button (click)="theme.toggleTheme()">
-          {{ theme.isDark() ? '☀️ Light' : '🌙 Dark' }}
-        </button>
+  
+  <div class="flex-1">
+    <div class="flex justify-between items-start"> 
+       <div class="flex gap-6">
+      <div class="gap-1 flex flex-col justify-between items-start">
+        <div>
+          <div class="flex justify-start items-start w-full">
+            <p class="text-(--text-color) font-extrabold text-sm md:text-2xl">
+              Daniel Aldreen Manjares
+            </p>
+            <img src="/images/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg" />
+          </div>
+          <div class="flex items-center">
+            <img
+              [src]="theme.isDark() ? 'images/Darkmode-Icons/location.svg' : 'images/location.svg'"
+            />
+            <p class="text-sm md:text-lg">Batangas, Philippines</p>
+          </div>
+          <p class="text-sm md:text-lg">Frontend Developer</p>
+        </div>
       </div>
-      <div class="flex justify-center items-center">
-        <img
-          [src]="theme.isDark() ? 'images/Darkmode-Icons/location.svg' : 'images/location.svg'"
+    </div>
+    <div>
+      <label class="relative inline-block w-10 h-6">
+        <input
+          type="checkbox"
+          class="peer sr-only"
+          [checked]="theme.isDark()"
+          (change)="theme.toggleTheme()"
         />
-        <p class="text-sm md:text-lg">Batangas, Philippines</p>
-      </div>
-      <div class=""><p class="text-sm md:text-lg">Frontend Developer</p></div>
-      <div class="flex justify-start items-center gap-2">
-        <a
-          href="/Resume/Manjares.pdf"
-          download=""
-          class="border border-gray-400 rounded-md px-3 py-1 flex justify-center items-center gap-2 hover:translate-y-1 duration-300 ease-in-out "
+        <span
+          class="absolute inset-0 cursor-pointer rounded-xl bg-gray-300 transition duration-400 peer-checked:bg-yellow-300 peer-focus:ring-1 peer-focus:ring-yellow-500"
         >
-          <img
-            class="w-5 h-5"
-            [src]="
-              theme.isDark() ? 'images/Darkmode-Icons/dlbutton.svg' : 'images/dlbuttonicon.svg'
-            "
-          />Dowload CV</a
+        </span>
+        <span
+          class="flex justify-center items-center absolute left-1 top-0.5 bottom-0.5 h-5 w-5 rounded-full transition duration-400 peer-checked:translate-x-3"
         >
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=danielaldreenm@gmail.com&su=Hello&body=Hi"
-          target="_blank"
-          class="border border-gray-400 rounded-md px-3 py-1 flex justify-center items-center gap-2 hover:translate-y-1 duration-300 ease-in-out"
-        >
-          <img
-            class="w-5 h-5"
-            [src]="theme.isDark() ? 'images/Darkmode-Icons/Mail.svg' : '/images/mail.svg'"
-            alt="Mail Icon"
-          />
-          Send Email
-        </a>
-      </div>
+          {{ theme.isDark() ? '☀️' : '🌙 ' }}
+        </span>
+      </label>
+    </div> 
+  </div>
+   
+    <div class="flex justify-start items-center gap-2 mt-2">
+      <a
+        href="/Resume/Manjares.pdf"
+        download=""
+        class="border border-gray-400 rounded-md  py-1 flex justify-center items-center gap-2 hover:translate-y-1 duration-300 ease-in-out text-xs md:text-sm px-3"
+      >
+        <img
+          class="w-5 h-5"
+          [src]="theme.isDark() ? 'images/Darkmode-Icons/dlbutton.svg' : 'images/dlbuttonicon.svg'"
+        />Dowload CV</a
+      >
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=danielaldreenm@gmail.com&su=Hello&body=Hi"
+        target="_blank"
+        class="border border-gray-400 rounded-md  py-1 flex justify-center items-center gap-2 hover:translate-y-1 duration-300 ease-in-out text-xs md:text-sm px-3" 
+      >
+        <img
+          class="w-5 h-5"
+          [src]="theme.isDark() ? 'images/Darkmode-Icons/Mail.svg' : '/images/mail.svg'"
+          alt="Mail Icon"
+        />
+        Send Email
+      </a>
     </div>
   </div>
 </section>
