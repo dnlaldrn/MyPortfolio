@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../../Components/header-component/header-component'
 import { AboutComponent } from '../../Components/about-component/about-component';
 import { ExperinceComponent } from '../../Components/experince-component/experince-component';
@@ -13,7 +12,6 @@ import {GalleryComponent} from '../../Components/gallery-component/gallery-compo
 @Component({
   selector: 'app-home-page',
   imports: [
-      RouterOutlet,
       HeaderComponent,
         AboutComponent,
         ExperinceComponent,
