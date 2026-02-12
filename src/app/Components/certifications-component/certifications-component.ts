@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import {Theme} from '../../services/theme'
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-certifications-component',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './certifications-component.html',
   styleUrl: './certifications-component.css',
 })
