@@ -9,4 +9,8 @@ export const routes: Routes = [
     path: "journey",
     loadComponent: () => import("./pages/journey-component/journey-component").then((x) => x.JourneyComponent),
   },
+   {
+    path: "certification",
+    loadComponent: () => import("./pages/certifications/certifications").then((x) => x.Certifications),
+  },
 ];
