@@ -65,6 +65,15 @@ export class GalleryService {
       img : '/images/Gallery/Day14.png',
       link : 'https://www.tiktok.com/@danielmanjares_on_ig/video/7603701614658030869?is_from_webapp=1&sender_device=pc&web_id=7600618382979122709'
     },
+    {
+      img : '/images/Gallery/Day15.png',
+      link : 'https://www.tiktok.com/@danielmanjares_on_ig/video/7604040257725648149?is_from_webapp=1&sender_device=pc&web_id=7600618382979122709'
+    },
+    {
+      img : '/images/Gallery/Day16.png',
+      link : 'https://www.tiktok.com/@danielmanjares_on_ig/video/7604396078091324692?is_from_webapp=1&sender_device=pc&web_id=7600618382979122709'
+    },
+    
     
  
   ]
