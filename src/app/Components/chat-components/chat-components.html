@@ -1,0 +1,40 @@
+<button class="chat-fab" (click)="toggleChat()">
+  <span>💬</span>
+</button>
+
+@if (isOpen) {
+  <div class="chat-window">
+    <div class="chat-header flex gap-2">
+      <img src="\images\profile.jpg" class="rounded-[50%] h-10 w-10">
+      <div>
+        <div class="flex justify-between items-center w-full gap-35">
+          <p class="font-bold">Daniel Manjares</p>
+          <button (click)="toggleChat()" class="text-xl">&times;</button>
+        </div>
+        <div class="flex justify-start items-center gap-1">
+          <p class="h-2 w-2 bg-green-600 rounded-[50%]"></p>
+          <small>Active</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-body flex flex-col">
+    @for (chat of chatHistory; track $index) {
+        <div [ngClass]="chat.role === 'user' ? 'user-msg' : 'ai-msg'">
+          {{ chat.text }}
+        </div>
+      }
+    </div>
+
+    <div class="chat-footer flex justify-between">
+      <input 
+        type="text"
+        [(ngModel)]="userInput" 
+        (keyup.enter)="sendMessage()" 
+        placeholder="Type a message..."
+        class="w-full"
+      >
+      <button (click)="sendMessage()" [disabled]="!userInput.trim()" class=" text-white px-3 rounded-sm">Send</button>
+    </div>
+  </div>
+}
