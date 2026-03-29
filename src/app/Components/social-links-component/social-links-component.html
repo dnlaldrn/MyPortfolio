@@ -6,16 +6,16 @@
   </div>
   <div class="flex gap-2">
     @for (items of socialLinkItems; track items) {
-      <div
+      <a
         [class]="
           theme.isDark()
             ? 'flex justify-center items-center gap-2 border border-white w-fit rounded-sm p-1 hover:translate-y-1 duration-300 ease-in-out mt-2'
             : 'flex justify-center items-center gap-2 border border-black w-fit rounded-sm p-1 hover:translate-y-1 duration-300 ease-in-out mt-2'
-        "
+        " href="{{items.link}}" target="_blank"
       >
         <img class="w-5 h-5" src="{{ items.icons }}" />
         <p>{{items.name}}</p>
-      </div>
+    </a>
     }
   </div>
 </section>
