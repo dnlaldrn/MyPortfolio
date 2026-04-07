@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { GeminiService } from '../../services/gemini/gemini';
 import { CommonModule } from '@angular/common';
+import { Theme } from '../../services/theme';
 @Component({
   selector: 'app-chat-components',
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule,CommonModule,],
   templateUrl: './chat-components.html',
   styleUrl: './chat-components.css',
 })
@@ -13,9 +14,12 @@ export class ChatComponents {
   userInput = '';
   chatHistory: any[] = [];
 
-  constructor(private geminiservice: GeminiService) {}
+  constructor(private geminiservice: GeminiService, public theme :Theme ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    
+  }
+
   toggleChat() {
     this.isOpen = !this.isOpen;
   }

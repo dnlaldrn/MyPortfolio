@@ -1,4 +1,4 @@
-<button class="chat-fab" (click)="toggleChat()">
+<button class="chat-fab" [class]="theme.isDark()? 'bg-white' : 'bg-black'" (click)="toggleChat()">
   <span>💬</span>
 </button>
 
