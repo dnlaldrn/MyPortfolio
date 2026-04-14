@@ -31,3 +31,13 @@
 .user-msg{
     background-color: black;
 }
+
+input{
+  color: black;
+
+}
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important; /* Optional: if you want the border gone only on focus */
+}
