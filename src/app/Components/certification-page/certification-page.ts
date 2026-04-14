@@ -13,6 +13,13 @@ interface CertificationElement{
 export class CertificationPage {
   certification : CertificationElement[]=[{
     img:'/images/certifications/cert1.png'
-  }]
+  },{
+ img:'/images/certifications/cert2.png'
+  },
+  {
+ img:'/images/certifications/cert3.png'
+  }
+  
+ ]
 
 }
