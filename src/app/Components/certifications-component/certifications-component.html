@@ -2,7 +2,12 @@
     <div class="flex justify-between items-center"><div class="flex justify-start items-center"><img [src]="theme.isDark()? '/images/Darkmode-Icons/certification.svg' : '/images/certificationlogo.svg'">Certifications</div><a routerLink="/certification" class="flex justify-center items-center"
       ><p class="text-xs">View All</p>
       <img class="h-4 w-4" src="/images/arrowforward.svg"
-    /></a></div>
-    <div [class]="theme.isDark()? 'border border-white w-fit rounded-sm flex items-end justify-center mt-2 p-1 hover:translate-y-1 duration-300 ease-in-out' 
-    : 'border border-black w-fit rounded-sm flex items-end justify-center mt-2 p-1 hover:translate-y-1 duration-300 ease-in-out' "><a href="https://www.freecodecamp.org/certification/dnlaldrn/responsive-web-design" target="_blank">Responsive Web Design</a></div>
+    /></a>
+  </div>
+  @for(item of certItems; track item){
+     <div [class]="theme.isDark()? 'border border-white w-fit rounded-sm flex items-end justify-center mt-2 p-1 hover:translate-y-1 duration-300 ease-in-out' 
+    : 'border border-black w-fit rounded-sm flex items-end justify-center mt-2 p-1 hover:translate-y-1 duration-300 ease-in-out' ">{{item}}</div>
+
+  }
+   
 </section>
