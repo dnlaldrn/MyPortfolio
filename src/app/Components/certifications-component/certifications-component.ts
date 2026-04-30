@@ -13,7 +13,7 @@ export class CertificationsComponent {
   constructor(public theme: Theme){
     
   }
-   certItems : string[] = ['Reslponsive Web Design', 'Angular Basics', 'Introduction to MEAN Stack'
+   certItems : string[] = ['Responsive Web Design', 'Angular Basics', 'Introduction to MEAN Stack'
     
 
   ]
