@@ -10,14 +10,14 @@
     @for (items of projectItems; track items) {
       <div class="border border-gray-400 rounded-md p-2 mt-1">
         <div class="flex justify-between">
-          <p>{{ items.name }}</p>
+          <p class="font-bold">{{ items.name }}</p>
           <p
             class="bg-green-400 text-xs rounded-md flex justify-center items-center px-2 text-white font-bold"
           >
             {{ items.status }}
           </p>
         </div>
-        <p>{{ items.description }}</p>
+        <p class="pt-2">{{ items.description }}</p>
         <p class="bg-gray-300 w-fit px-3 py-1 rounded-lg text-sm">
           <a href="{{ items.url }}">{{ items.url }}</a>
         </p>
