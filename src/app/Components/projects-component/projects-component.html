@@ -11,10 +11,12 @@
       <div class="border border-gray-400 rounded-md p-2 mt-1">
         <div class="flex justify-between">
           <p class="font-bold">{{ items.name }}</p>
-          <p
-            class="bg-green-400 text-xs rounded-md flex justify-center items-center px-2 text-white font-bold"
+          <p [ngClass]="  
+          items.completed ? 'bg-green-400 ':'bg-red-500'"
+            class="text-xs rounded-md flex justify-center items-center px-2 text-white font-bold"
           >
-            {{ items.status }}
+          {{ items.completed ? 'Completed' : 'On Progress'}}
+           
           </p>
         </div>
         <p class="pt-2">{{ items.description }}</p>
