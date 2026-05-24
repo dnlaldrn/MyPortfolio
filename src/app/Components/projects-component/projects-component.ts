@@ -23,13 +23,13 @@ export class ProjectsComponent {
       name: 'San Juan Senior High School Web',
       description: 'A prototype web-based school platform designed to explore how students can access academic resources, announcements, and essential information in a centralized system.',
       completed: true,
-      url: 'sjshs.vercel.app',
+      url: 'https://sjshs.vercel.app',
     },
      {
       name: 'Environmental Science',
       description: 'An interactive web platform for environmental science that presents educational content, resources, and insights to promote awareness and understanding of environmental issues and sustainability',
       completed: true,
-      url: 'envsci.vercel.app',
+      url: 'https://envsci.vercel.app/',
     },
     {
       name: 'Rock Paper And Scissor Game',

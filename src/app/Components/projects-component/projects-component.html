@@ -20,8 +20,8 @@
           </p>
         </div>
         <p class="pt-2">{{ items.description }}</p>
-        <p class="bg-gray-300 w-fit px-3 py-1 rounded-lg text-sm">
-          <a href="{{ items.url }}">{{ items.url }}</a>
+        <p [class]="theme.isDark()? 'bg-white text-black w-fit px-3 py-1 rounded-lg text-sm' : 'bg-gray-300 w-fit px-3 py-1 rounded-lg text-sm'">
+          <a href="{{ items.url }}" target="_blank">Visit the site</a>
         </p>
       </div>
     }
