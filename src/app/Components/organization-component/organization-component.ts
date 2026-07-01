@@ -16,7 +16,8 @@ export class OrganizationComponent {
   }
   organizationItems:OrganizationItem[]=[
     {name:"Association of Commited Computer Science Students - ACCESS"},
-    {name:"Student Coders Innovative Programming Techniques - SCRIPT"}
+    {name:"Student Coders Innovative Programming Techniques - SCRIPT"},
+     {name:"ASTRA Developers"}
   ]
 
 }
