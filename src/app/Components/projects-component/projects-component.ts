@@ -20,22 +20,10 @@ export class ProjectsComponent {
   constructor(public theme: Theme) {}
   projectItems: ProjectItems[] = [
     {
-      name: 'San Juan Senior High School Web',
+      name: 'SDO-Website',
       description: 'A prototype web-based school platform designed to explore how students can access academic resources, announcements, and essential information in a centralized system.',
       completed: true,
-      url: 'https://sjshs.vercel.app',
-    },
-     {
-      name: 'Environmental Science',
-      description: 'An interactive web platform for environmental science that presents educational content, resources, and insights to promote awareness and understanding of environmental issues and sustainability',
-      completed: true,
-      url: 'https://envsci.vercel.app/',
-    },
-    {
-      name: 'Rock Paper And Scissor Game',
-      description: 'A simple Rock–Paper–Scissors game developed to strengthen my programming fundamentals.',
-      completed: true,
-      url: 'https://dnlaldrn.github.io/Rock-Paper-Scissors/',
+      url: 'https://sdo-alangilan.vercel.app',
     },
     {
       name: 'Stanza',
