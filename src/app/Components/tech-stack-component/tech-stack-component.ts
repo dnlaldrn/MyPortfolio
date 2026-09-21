@@ -30,13 +30,14 @@ export class TechStackComponent {
     { name: 'HTML' },
     { name: 'CSS' },
     { name: 'JavaScript' },
+    { name: 'React' },
     { name: 'TypeScript' },
     { name: 'Angular' },
     { name: 'Tailwind CSS' },
   ];
   backendTechStackItems: BackendTechStackItem[] = [
     {name: 'Node.js' },
-    {name: 'Express.js' },
+    {name: 'Supabase' },
     {name: 'MySql'}
   ]
   otherTechStackItems: OtherTechStackItem[] = [
@@ -45,5 +46,6 @@ export class TechStackComponent {
     {name: 'Prettier' },
     {name: 'Vercel' },
     {name: 'Figma' }
+    
   ]
 }

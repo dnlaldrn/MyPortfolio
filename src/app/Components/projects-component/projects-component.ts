@@ -26,6 +26,12 @@ export class ProjectsComponent {
       url: 'https://sdo-alangilan.vercel.app',
     },
     {
+      name: 'GreenQuest',
+      description: 'A web platform where users upload videos of eco-friendly actions (planting trees, cleaning beaches, recycling, etc.), an AI validates the action, awards points, and users can redeem those points for real rewards.',
+      completed: false,
+      url: 'https:/greenquest-ph.vercel.app/',
+    },
+    {
       name: 'Stanza',
       description: 'An ongoing web-based dorm listing app for Batangas City',
       completed: false,
